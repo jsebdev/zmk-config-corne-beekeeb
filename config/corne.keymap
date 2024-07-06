@@ -13,16 +13,11 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// | TAB   |  Q  |  W  |  E           |  R   |  T   |   |  Y   |  U    |  I    |  O  |  P   |  BKSP   |
-// | ESC   |  A  |  S  |  D           |  F   |  G   |   |  H   |  J    |  K    |  L  |  ;   |   '     |
-// | LSHFT |  Z  |  X  |  C           |  V   |  B   |   |  N   |  M    |  ,    |  .  |  /   |  RSHFT  |
-//                     | MT LALT LGUI | lctl | MO 2 |   | MO 3 | SPACE | enter |
                         bindings = <
-   &kp TAB    &kp Q &kp W &kp E          &kp R    &kp T          &kp Y  &kp U      &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC    &kp A &kp S &kp D          &kp F    &kp G          &kp H  &kp J      &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT  &kp Z &kp X &kp C          &kp V    &kp B          &kp N  &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                          &mt LALT LGUI  &kp LCTL &mo 2          &mo 3  &kp SPACE  &kp RET
+   &kp TAB    &kp Q  &kp W  &kp E          &kp R    &kp T          &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
+   &kp ESC    &kp A  &kp S  &kp D          &kp F    &kp G          &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+   &kp LSHFT  &kp Z  &kp X  &kp C          &kp V    &kp B          &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                            &mt LALT LGUI  &kp LCTL &kp SPACE      &mo 2  &mo 3  &kp RET
                         >;
                 };
 
