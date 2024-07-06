@@ -29,8 +29,8 @@
 //                 |     |     |     |   |     |     |     |
                         bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &to  0  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &to 4      &trans  &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans     &trans  &trans  &trans
                         >;
                 };
@@ -40,7 +40,7 @@
    &kp  TILDE  &kp EXCL &kp DQT    &kp HASH &kp DLLR &kp PRCNT      &kp AMPS  &kp LBKT  &kp LPAR  &kp LBRC &kp BSLH  &kp DEL
    &trans      &kp AT   &kp CARET  &trans   &trans   &trans         &trans    &kp RBKT  &kp RPAR  &kp RBRC &kp EQUAL &kp ASTRK
    &trans      &trans   &trans     &trans   &trans   &trans         &trans    &trans    &trans    &kp COLN &kp MINUS &trans
-                                   &trans   &trans   &trans         &trans    &trans    &trans
+                                   &trans   &trans   &trans         &trans    &to 1     &trans
                         >;
                 };
 
@@ -50,6 +50,15 @@
    &trans  &trans  &trans  &trans     &trans  &trans         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
    &trans  &trans  &trans  &kp CAPS   &trans  &trans         &trans    &trans    &trans  &trans     &trans  &trans
                            &trans     &trans  &trans         &to 1     &trans    &trans
+                        >;
+                };
+
+                bluetooth_4 {
+                        bindings = <
+   &trans  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4  &trans     &trans  &trans      &trans      &trans  &bt BT_SEL 0  &trans
+   &to 0   &bt BT_CLR_ALL   &trans        &trans          &trans        &trans     &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans        &trans
+   &trans  &trans           &trans        &bt BT_CLR_ALL  &trans        &trans     &trans  &trans      &trans      &trans  &trans        &trans
+                           &trans  &trans  &trans     &trans  &trans  &trans
                         >;
                 };
         };
