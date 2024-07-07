@@ -25,7 +25,7 @@
                         bindings = <
    &trans  &trans  &to 11  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
    &to  0  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &to 4      &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &sl 4      &trans  &trans  &trans  &trans  &trans  &trans
                            &trans  &trans  &trans     &trans  &trans  &trans
                         >;
                 };
