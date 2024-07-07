@@ -120,7 +120,16 @@
                         >;
                 };
 
-                layer_12 {
+                game0_12 {
+                        bindings = <
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans     &trans  &trans  &trans
+                        >;
+                };
+
+                game1_13 {
                         bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
