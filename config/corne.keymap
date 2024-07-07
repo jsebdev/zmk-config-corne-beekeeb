@@ -14,10 +14,10 @@
 #define NUMBERS 3
 #define BLUETOOTH 4
 #define KEYPAD 7
-#define F_BUTTNS 8
+#define F_BUTTONS 8
 #define MEDIA 9
 #define WIN 11
-#define SYMBLS 14
+#define SYMBOLS 14
 
 
 &sl {
@@ -33,7 +33,7 @@
    &lt KEYPAD TAB  &kp Q  &kp W  &kp E     &kp R    &kp T          &kp Y       &kp U        &kp I             &kp O    &kp P     &kp BSPC
    &mt LCTL ESC    &kp A  &kp S  &kp D     &kp F    &kp G          &kp H       &kp J        &kp K             &kp L    &kp SEMI  &kp SQT
    &kp LSHFT       &kp Z  &kp X  &kp C     &kp V    &kp B          &kp N       &kp M        &kp COMMA         &kp DOT  &kp FSLH  &kp RSHFT
-                                 &kp LALT  &kp LGUI &kp SPACE      &mo SYMBLS  &mo NUMBERS  &lt F_BUTTNS RET
+                                 &kp LALT  &kp LGUI &kp SPACE      &mo SYMBOLS &mo NUMBERS  &lt F_BUTTONS RET
                         >;
                 };
 
