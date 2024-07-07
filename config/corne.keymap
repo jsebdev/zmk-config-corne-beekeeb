@@ -111,9 +111,9 @@
 
                 media_9 {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp K_PREV  &kp K_NEXT   &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp C_PREV  &kp C_NEXT   &kp UP             &kp C_PLAY       &kp C_EJECT
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &kp LEFT     &kp DOWN           &kp RIGHT        &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp C_PREV  &kp C_NEXT  &kp UP             &kp C_PLAY       &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &kp LEFT    &kp DOWN           &kp RIGHT        &trans
                            &trans  &trans  &trans     &trans  &trans      &trans
                         >;
                 };
