@@ -44,7 +44,7 @@
    &trans  &kp N1  &kp N2  &kp N3     &kp N4  &kp N5         &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
    &trans  &trans  &trans  &trans     &trans  &trans         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
    &trans  &trans  &trans  &kp CAPS   &trans  &trans         &trans    &trans    &trans  &trans     &trans  &trans
-                           &trans     &trans  &trans         &to 1     &trans    &trans
+                           &trans     &trans  &trans         &to 1     &trans    &mo 9
                         >;
                 };
 
@@ -89,16 +89,16 @@
    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                           &trans  &trans  &trans     &trans  &trans  &trans
+                           &trans  &trans  &trans     &trans  &mo 9   &trans
                         >;
                 };
 
-                layer_9 {
+                media_9 {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans     &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp K_PREV  &kp K_NEXT   &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp C_PREV  &kp C_NEXT   &kp UP             &kp C_PLAY       &kp C_EJECT
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &kp LEFT     &kp DOWN           &kp RIGHT        &trans
+                           &trans  &trans  &trans     &trans  &trans      &trans
                         >;
                 };
 
