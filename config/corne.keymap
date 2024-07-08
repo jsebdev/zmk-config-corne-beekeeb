@@ -15,8 +15,8 @@
 #define BLUETOOTH 4
 #define KEYPAD 7
 #define F_BUTTONS 8
-#define MEDIA 9
 #define SYMBOLS 13
+#define MEDIA 14
 #define MODES 15
 
 
