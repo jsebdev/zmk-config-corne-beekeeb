@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
+#define WIN 1
 #define NUMBERS 3
 #define BLUETOOTH 4
 #define KEYPAD 7
 #define F_BUTTONS 8
 #define MEDIA 9
-#define WIN 10
 #define SYMBOLS 13
 #define MODES 15
 
@@ -37,12 +37,12 @@
                         >;
                 };
 
-                layer_1 {
+                default_windows_layer_1 {
                         bindings = <
-   &trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans  &trans          &trans  &trans  &trans
+   &trans         &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &mt LGUI  ESC  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans         &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans    &kp LCTL  &trans     &trans  &trans  &trans
                         >;
                 };
 
@@ -60,7 +60,7 @@
    &kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4  &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0  &trans
    &trans     &trans  &trans  &trans     &trans  &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp INS &kp PRINTSCREEN
    &trans     &trans  &trans  &kp CAPS   &trans  &trans         &kp PG_DN  &kp PG_UP  &kp HOME   &kp END    &trans  &trans
-                              &trans     &trans  &trans         &trans     &trans     &mo MEDIA
+                              &trans     &trans  &trans         &sl MODES  &trans     &mo MEDIA
                         >;
                 };
 
@@ -102,10 +102,10 @@
 
                 F_buttons_8 {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp F1     &kp F2   &kp F3   &kp F4   &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp F5     &kp F6   &kp F7   &kp F8   &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp F9     &kp F10  &kp F11  &kp F12  &trans
-                           &trans  &trans  &trans     &trans  &sl MODES  &trans
+   &trans    &trans  &trans  &trans  &trans  &trans     &trans  &kp F1     &kp F2   &kp F3   &kp F4   &kp DEL
+   &kp LGUI  &trans  &trans  &trans  &trans  &trans     &trans  &kp F5     &kp F6   &kp F7   &kp F8   &trans
+   &trans    &trans  &trans  &trans  &trans  &trans     &trans  &kp F9     &kp F10  &kp F11  &kp F12  &trans
+                             &trans  &trans  &trans     &trans  &sl MODES  &trans
                         >;
                 };
 
@@ -118,12 +118,12 @@
                         >;
                 };
 
-                default_windows_layer10 {
+                layer_10 {
                         bindings = <
-   &trans         &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &mt LGUI  ESC  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans         &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans    &kp LCTL  &trans     &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans     &trans  &trans  &trans
                         >;
                 };
 
@@ -147,10 +147,10 @@
 
                 symbols_13 {
                         bindings = <
-   &kp  TILDE  &kp EXCL &kp DQT    &kp HASH &kp DLLR &kp PRCNT      &kp AMPS   &kp LBKT   &kp LPAR  &kp LBRC &kp BSLH  &kp DEL
-   &kp LGUI    &kp AT   &kp CARET  &trans   &trans   &trans         &trans     &kp RBKT   &kp RPAR  &kp RBRC &kp EQUAL &kp ASTRK
-   &trans      &trans   &trans     &trans   &trans   &trans         &trans     &trans     &trans    &kp COLN &kp MINUS &kp K_CMENU
-                                   &trans   &trans   &trans         &sl MODES  &mo MEDIA  &trans
+   &kp  TILDE  &kp EXCL &kp DQT    &kp HASH &kp DLLR &kp PRCNT      &kp AMPS  &kp LBKT   &kp LPAR  &kp LBRC &kp BSLH  &kp DEL
+   &trans      &kp AT   &kp CARET  &trans   &trans   &trans         &trans    &kp RBKT   &kp RPAR  &kp RBRC &kp EQUAL &kp ASTRK
+   &trans      &trans   &trans     &trans   &trans   &trans         &trans    &trans     &trans    &kp COLN &kp MINUS &kp K_CMENU
+                                   &trans   &trans   &trans         &trans    &mo MEDIA  &trans
                         >;
                 };
 
