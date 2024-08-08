@@ -168,7 +168,7 @@
    &kp N0       &trans  &to WIN  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
    &to DEFAULT  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
    &trans       &trans  &trans   &trans  &trans  &sl BLUETOOTH   &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &trans          &trans  &trans  &trans
+                                 &trans  &trans  &to DEFAULT     &trans  &trans  &trans
                         >;
                 };
 
