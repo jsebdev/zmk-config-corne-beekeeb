@@ -10,11 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define WIN 1
+#define WINDOWS 1
 #define NUMBERS 3
 #define BLUETOOTH 4
 #define KEYPAD 7
 #define F_BUTTONS 8
+#define ADJUST_LAYER_FOR_WINDOWS 9
 #define SYMBOLS 13
 #define MEDIA 14
 #define MODES 15
@@ -102,19 +103,19 @@
 
                 F_buttons_8 {
                         bindings = <
-   &trans    &trans  &trans  &trans  &trans  &trans     &trans  &kp F1     &kp F2   &kp F3   &kp F4   &kp DEL
-   &kp LGUI  &trans  &trans  &trans  &trans  &trans     &trans  &kp F5     &kp F6   &kp F7   &kp F8   &trans
-   &trans    &trans  &trans  &trans  &trans  &trans     &trans  &kp F9     &kp F10  &kp F11  &kp F12  &trans
-                             &trans  &trans  &trans     &trans  &sl MODES  &trans
+   &trans         &trans  &trans  &trans  &trans  &trans     &trans  &kp F1     &kp F2   &kp F3   &kp F4   &kp DEL
+   &kp LG(SPACE)  &trans  &trans  &trans  &trans  &trans     &trans  &kp F5     &kp F6   &kp F7   &kp F8   &trans
+   &trans         &trans  &trans  &trans  &trans  &trans     &trans  &kp F9     &kp F10  &kp F11  &kp F12  &trans
+                                  &trans  &trans  &trans     &trans  &sl MODES  &trans
                         >;
                 };
 
-                layer9 {
+                adjust_layer_for_windows_9 {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans     &trans  &trans  &trans
+   &trans    &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &kp LGUI  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans    &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans     &trans  &trans  &trans
                         >;
                 };
 
@@ -165,12 +166,19 @@
 
                 modes_15 {
                         bindings = <
-   &kp N0       &trans  &to WIN  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &to DEFAULT  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans       &trans  &trans   &trans  &trans  &sl BLUETOOTH   &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &to DEFAULT     &trans  &trans  &trans
+   &kp N0       &trans  &to WINDOWS  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+   &to DEFAULT  &trans  &trans       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+   &trans       &trans  &trans       &trans  &trans  &sl BLUETOOTH   &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans  &trans  &to DEFAULT     &trans  &trans  &trans
                         >;
                 };
 
+        };
+        conditional_layers {
+                compatible = "zmk,conditional-layers";
+                adjustment_for_windows {
+                        if-layers = <WINDOWS F_BUTTONS>;
+                        then-layer = <ADJUST_LAYER_FOR_WINDOWS>;
+                };
         };
 };
