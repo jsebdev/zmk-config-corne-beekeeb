@@ -18,6 +18,8 @@
 #define KEYPAD 7
 #define F_BUTTONS 8
 #define ADJUST_LAYER_FOR_WINDOWS 9
+#define GAME0 12
+#define GAME1 13
 #define MEDIA 14
 #define MODES 15
 
@@ -140,19 +142,20 @@
 
                 game0_12 {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans     &trans  &trans  &trans
+   &kp TAB  &trans  &trans  &trans    &trans    &trans     &trans     &trans   &trans     &trans  &trans  &trans
+   &kp CAPS &trans  &trans  &trans    &trans    &trans     &trans     &trans   &trans     &trans  &trans  &trans
+   &trans   &trans  &trans  &trans    &trans    &trans     &trans     &trans   &trans     &trans  &trans  &trans
+                            &kp LALT  &kp LCTL  &kp SPACE  &mo GAME1  &kp RET  &mo MEDIA
                         >;
                 };
 
+
                 game1_13 {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans     &trans  &trans  &trans
+   &trans   &trans  &trans  &trans    &trans  &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &kp UP    &trans
+   &kp ESC  &trans  &trans  &trans    &trans  &trans     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp LEFT  &kp DOWN  &kp RIGHT
+   &trans   &trans  &trans  &trans    &trans  &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans    &trans    &trans
+                            &kp LGUI  &trans  &trans     &trans     &kp ESC    &sl MODES
                         >;
                 };
 
@@ -167,10 +170,10 @@
 
                 modes_15 {
                         bindings = <
-   &kp N0       &trans  &to WINDOWS  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &to DEFAULT  &trans  &trans       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans       &trans  &trans       &trans  &trans  &sl BLUETOOTH   &trans  &trans  &trans  &trans  &trans  &trans
-                                     &trans  &trans  &to DEFAULT     &trans  &trans  &trans
+   &trans  &trans  &to WINDOWS  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans       &trans  &trans  &to GAME0       &trans  &trans  &trans  &trans  &trans  &trans
+   &trans  &trans  &trans       &trans  &trans  &sl BLUETOOTH   &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &to DEFAULT     &trans  &trans  &trans
                         >;
                 };
 
