@@ -43,10 +43,10 @@
 
                 default_windows_layer_1 {
                         bindings = <
-   &trans   &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &kp ESC  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-   &trans   &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans    &kp LCTL  &trans     &trans  &trans  &trans
+   &trans         &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &mt LGUI  ESC  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+   &trans         &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans    &kp LCTL  &trans     &trans  &trans  &trans
                         >;
                 };
 
