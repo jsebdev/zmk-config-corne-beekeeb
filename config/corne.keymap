@@ -52,10 +52,10 @@
 
                 symbols_2 {
                         bindings = <
-   &kp GRAVE   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &trans  &trans     &trans  &kp MINUS  &kp EQUAL  &trans
-   &trans      &trans    &trans  &trans    &trans    &trans         &trans  &trans     &trans  &kp LBKT   &kp RBKT   &kp BSLH
-   &trans      &trans    &trans  &trans    &trans    &trans         &trans  &trans     &trans  &trans     &trans     &kp K_CMENU
-                                 &trans    &trans    &trans         &trans  &mo MEDIA  &trans
+   &kp GRAVE   &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans  &kp MINUS  &kp EQUAL    &trans
+   &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans  &kp LBKT   &kp RBKT     &kp BSLH
+   &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans  &trans     &kp K_CMENU  &trans
+                               &trans  &trans  &trans      &trans  &mo MEDIA  &trans
                         >;
                 };
 
